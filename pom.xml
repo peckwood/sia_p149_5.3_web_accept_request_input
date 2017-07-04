@@ -28,6 +28,7 @@
 			<version>1.4.182</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- validate fields annotated with validation annotations like @NotNull @Size-->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>

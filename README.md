@@ -7,3 +7,4 @@
    1. spittr.web.SpittleController
    2. spittr.web.SpittleControllerTest
    3. main/webapp/WEB-INF/views/spittle.jsp
+3. 
