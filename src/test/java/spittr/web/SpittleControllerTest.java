@@ -24,7 +24,7 @@ public class SpittleControllerTest {
 	//Query parameters
 	@Test
 	public void shouldShowReXcentSpitttles() throws Exception {
-		List<Spittle> expectedSpittles = createSpittleList(20);
+		List<Spittle> expectedSpittles = createSpittleList(5);
 		// mock repository
 		SpittleRepository mockRepository = mock(SpittleRepository.class);
 		when(mockRepository.findSpittles(5, 10)).thenReturn(expectedSpittles);
@@ -39,7 +39,7 @@ public class SpittleControllerTest {
 				 * path will be confused with the controller��s path
 				 */
 				.setSingleView(new InternalResourceView("/WEB-INF/views/spittles.jsp")).build();
-		mockMvc.perform(MockMvcRequestBuilders.get("/spittleControllerMapping?max=5&count=10"))
+		mockMvc.perform(MockMvcRequestBuilders.get("/spittleControllerMapping/show?max=5&count=10"))
 				.andExpect(MockMvcResultMatchers.view().name("spittles"))
 				/*
 				 * When addAttribute() is called without specifying a key, the
