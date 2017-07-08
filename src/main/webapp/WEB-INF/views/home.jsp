@@ -16,8 +16,4 @@
 	<a href="<c:url value="/spitter/register" />">Register</a>
 </body>
 
-</head>
-<body>
-
-</body>
 </html>
